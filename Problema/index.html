@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title>Chat de Laboratoria</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" href="image/favicon.png" type="image/png">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CRoboto:300,400,500" media="all">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="css/icomoon.css">
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+      <link rel="stylesheet" type="text/css" href="css/queries.css">
+  </head>
+  <body>
+    <header>
+      <div class = "container">
+        <div class = "row">
+          <div class = "col-md-4">
+            <div class = "owner">
+            <div class = "profile-pic"><img src="image/gian.jpg"></div>
+              <span class = "icon-message"></span>
+              <span class = "icon-dots-three-vertical owner-dots"></span>
+            </div>  
+          </div>       
+          <div class = "col-md-8">
+            <div class = "conversation">
+              <div class = "profile-pic"><img src="image/logocodeacademy.png"></div>
+              <div id = "nombre">
+                <h4>Laboratoria Perú</h4>
+                <h5>Ana María, Aldo, Gian, Mariana, Papu, Tú</h5>
+              </div>
+              <span class = "icon-attachment"></span>
+              <span class = "icon-dots-three-vertical convo-dots"></span>
+            </div>
+          </div>
+        </div>
+      </div>    
+    </header>
+    <section>
+      <div class = "container">
+         <div class = "row">
+            <div class = "col-md-4 contactoslist">
+               <div class = "col-md-12 chat-nuevo">
+                 <span class = "icon-search"></span><input type="text" placeholder="Buscar o empezar un chat nuevo">
+               </div>
+              <div class = "col-md-12 contacts" id="contacto">
+                 <div class = "profile-pic"><img src="image/logocodeacademy.png"></div>
+                 <h4>Laboratoria Perú<span style="float:right;font-size:12px;margin-right:5%;color:gray">14:25</span></h4>
+                 <h5>Aldo: Dale dale!</h5>
+               </div>
+               <div class = "col-md-12 contacts" id="contacto">
+                  <div class = "profile-pic"><img src="image/raymi.jpg"></div>
+                  <h4>Raymi Saldomando<span style="float:right;font-size:12px;margin-right:5%;color:gray">11:25</span></h4>
+                  <h5>La clase va bien!</h5>
+               </div>
+               <div class = "col-md-12 contacts" id="contacto">
+                  <div class = "profile-pic"><img src="image/mariana.jpg"></div>
+                  <h4>Mariana Costa<span style="float:right;font-size:12px;margin-right:5%;color:gray">09:25</span></h4>
+                  <h5>El panel de speakers esta buenazo</h5>
+               </div>
+               <div class = "col-md-12 contacts" id="contacto">
+                  <div class = "profile-pic"><img src="image/anamaria.jpg"></div>
+                  <h4>Ana María Martinez Franklin<span style="float:right;font-size:12px;margin-right:5%;color:gray">Ayer</span></h4>
+                  <h5>Pues dale chamo!</h5>
+               </div>
+               <div class = "col-md-12 contacts" id="contacto">
+                  <div class = "profile-pic"><img src="image/rodulfo.jpg"></div>
+                  <h4>Rodulfo Prieto<span style="float:right;font-size:12px;margin-right:5%;color:gray">Martes</span></h4>
+                  <h5>Como van las chicas?</h5>
+               </div>
+               <div class = "col-md-12 contacts" id="contacto">
+                  <div class = "profile-pic"><img src="image/andrea.jpg"></div>
+                  <h4>Andrea Lamas<span style="float:right;font-size:12px;margin-right:5%;color:gray">Lunes</span></h4>
+                  <h5>Hoy me tocan clases de canto, yee!</h5>
+               </div>
+               <div class = "col-md-12 contacts" id="contacto">
+                 <div class = "profile-pic"><img src="image/mariapaula.jpg"></div>
+                 <h4>Maria Paula Rivarola<span style="float:right;font-size:12px;margin-right:5%;color:gray">13/01/2016</span></h4>
+                 <h5>Wuju! Esto me encanta!! En verdad!</h5>
+               </div>
+               <div class = "col-md-12 contacts" id="contacto">
+                  <div class = "profile-pic"><img src="image/katy.jpg"></div>
+                 <h4>Katy Sanchez<span style="float:right;font-size:12px;margin-right:5%;color:gray">11/01/2016</span></h4>
+                 <h5>No te preocupes, tengo el salon bajo control</h5>
+              </div>
+              <div class = "col-md-12 contacts" id="contacto">
+                 <div class = "profile-pic"><img src="image/aldo.jpg"></div>
+                 <h4>Aldo Alfaro<span style="float:right;font-size:12px;margin-right:5%;color:gray">03/01/2016</span></h4>
+                 <h5>Vao a comer?</h5>
+               </div>   
+            </div>
+            <div id = "conversation" class = "col-md-8 convo-section">
+              <div id = "col-5" class = "col-md-5">
+              </div>
+           </div>
+        </div>
+        <div class = "row">
+        	<div class = "col-md-12 typing-section">
+                 <span class = "icon-insert_emoticon"></span>
+                 <input id= "mensaje" type="text" placeholder="Escribe tu mensaje aquí">
+                 <button type="button" id="sendButton" onclick="send()">Send</button>
+              </div>
+      </div>
+    </section>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
